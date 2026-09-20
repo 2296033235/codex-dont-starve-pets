@@ -27,10 +27,10 @@ codex-dont-starve-pets/
 ├── install.ps1          # 参数化安装：-Pet <角色id>
 ├── pets/
 │   ├── wilson/          # 威尔逊：final/ 图集 + pet/ 清单 + README
-│   └── weber/           # 韦伯：同上
+│   └── webber/          # 韦伯：同上
 └── scripts/
     ├── wilson/          # 威尔逊的提取 / 渲染 / 装配 / QA 脚本
-    └── weber/           # 韦伯的同套脚本
+    └── webber/          # 韦伯的同套脚本
 ```
 
 名称、称号与台词均取自《饥荒》游戏自带官方中文语言文件 `data/scripts/languages/chinese_s.po`。

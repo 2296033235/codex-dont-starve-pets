@@ -40,7 +40,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet webber
 | `pets/webber/final/spritesheet-extended.png` | 同一图集的 PNG 版本 |
 | `pets/webber/final/validation-extended.json` | 官方校验脚本结果：`ok: true`，无 error / 无 warning |
 | `pets/webber/final/provenance.json` | 逐行来源记录（哪个官方动画、第几帧、朝向、缩放） |
-| `scripts/weber/` | 解码、渲染与 QA 脚本（可复现整套素材） |
+| `scripts/webber/` | 解码、渲染与 QA 脚本（可复现整套素材） |
 
 ## 每一行用的是哪个官方动作
 
@@ -76,11 +76,11 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet webber
 ## 免责声明
 
 本仓库只打包了渲染流程和最终图集，不包含《饥荒》原版游戏与它的版权资源。若要复现，需自备一份正版《饥荒》，
-并使用 `scripts/weber/` 中的脚本从自己的游戏安装目录提取。
+并使用 `scripts/webber/` 中的脚本从自己的游戏安装目录提取。
 
 ## 复现方式
 
-`scripts/weber/` 里是完整流水线：
+`scripts/webber/` 里是完整流水线：
 
 - `extract_weber.py`：解码韦伯官方 KTEX 贴图集并切分部件
 - `render_weber_candidates.py`：批量渲染候选动作接触表
@@ -88,4 +88,4 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet webber
 - `qa_weber.py`：客观朝向 / 镜像 / 注视方向测量
 
 运行环境：Python 3.x + Pillow + numpy。`scripts/` 根目录没有共享解码器，`scripts/wilson/` 与
-`scripts/weber/` 各自内含一套（ktex.py / kanim.py / render_anim.py），彼此独立可复现。
+`scripts/webber/` 各自内含一套（ktex.py / kanim.py / render_anim.py），彼此独立可复现。
