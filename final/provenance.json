@@ -1,0 +1,205 @@
+{
+  "idle": {
+    "source": "ds/player_idles.zip/idle_loop",
+    "facing": 8,
+    "frame_indices": [
+      0,
+      11,
+      22,
+      32,
+      43,
+      54
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 66,
+    "fps": 30.0,
+    "scale": 0.4969
+  },
+  "running-right": {
+    "source": "ds/player_basic.zip/run_loop",
+    "facing": 5,
+    "frame_indices": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9,
+      11,
+      13
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 16,
+    "fps": 30.0,
+    "scale": 0.4275
+  },
+  "running-left": {
+    "source": "ds/player_basic.zip/run_loop",
+    "facing": 5,
+    "frame_indices": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      9,
+      11,
+      13
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 16,
+    "fps": 30.0,
+    "scale": 0.4275
+  },
+  "waving": {
+    "source": "dst/player_emotes.zip/emote_waving",
+    "facing": 255,
+    "frame_indices": [
+      0,
+      14,
+      29,
+      44
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 59,
+    "fps": 30.0,
+    "scale": 0.5012
+  },
+  "jumping": {
+    "source": "dst/player_idles_wilson.zip/idle_wilson",
+    "facing": 8,
+    "frame_indices": [
+      0,
+      15,
+      30,
+      45,
+      60
+    ],
+    "frame_selection": "explicit official frames",
+    "source_frame_count": 77,
+    "fps": 30.0,
+    "scale": 0.4921
+  },
+  "failed": {
+    "source": "ds/player_idles.zip/idle_sanity_loop",
+    "facing": 8,
+    "frame_indices": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      14,
+      17,
+      20
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 24,
+    "fps": 30.0,
+    "scale": 0.5122
+  },
+  "waiting": {
+    "source": "ds/player_idles.zip/idle_inaction",
+    "facing": 8,
+    "frame_indices": [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 49,
+    "fps": 30.0,
+    "scale": 0.4951
+  },
+  "running": {
+    "source": "ds/player_actions_item.zip/build_loop",
+    "facing": 8,
+    "frame_indices": [
+      0,
+      2,
+      5,
+      8,
+      10,
+      12
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 16,
+    "fps": 30.0,
+    "scale": 0.5347
+  },
+  "review": {
+    "source": "ds/player_actions.zip/dial_loop",
+    "facing": 255,
+    "frame_indices": [
+      0,
+      8,
+      17,
+      26,
+      34,
+      42
+    ],
+    "frame_selection": "even sample of the clip",
+    "source_frame_count": 52,
+    "fps": 30.0,
+    "scale": 0.4921
+  },
+  "look-directions-a": {
+    "source": "ds/player_idles.zip/idle_loop frame 0 + official head rotation",
+    "angles": [
+      0,
+      22.5,
+      45,
+      67.5,
+      90,
+      112.5,
+      135,
+      157.5
+    ],
+    "registration": "neutral frame registration (row 0 column 6)",
+    "mechanics": "official front head group rotated up to 16 deg about the neck, face sprite led by up to 12 units; torso/arms stay in the official idle pose",
+    "scale": 0.5013
+  },
+  "look-directions-b": {
+    "source": "ds/player_idles.zip/idle_loop frame 0 + official head rotation",
+    "angles": [
+      180,
+      202.5,
+      225,
+      247.5,
+      270,
+      292.5,
+      315,
+      337.5
+    ],
+    "registration": "neutral frame registration (row 0 column 6)",
+    "mechanics": "official front head group rotated up to 16 deg about the neck, face sprite led by up to 12 units; torso/arms stay in the official idle pose",
+    "scale": 0.5013
+  },
+  "_notes": {
+    "hidden_layers": [
+      "ARM_carry",
+      "BEARD",
+      "HAIR_HAT",
+      "HAT",
+      "HEAD_HAT",
+      "LANTERN_OVERLAY",
+      "SWAP_BODY",
+      "SWAP_FACE",
+      "hair_hat"
+    ],
+    "hidden_element_names": [
+      "LANTERN_OVERLAY",
+      "headbase_hat",
+      "swap_goo",
+      "swap_hat",
+      "swap_lantern",
+      "swap_object"
+    ],
+    "hidden_layer_reason": "equipment-only layers (carry arm, hat-shaped head) that Klei hides for a bare-handed, hatless Wilson; drawing them added a third arm",
+    "row_1_2_facing": "the official side view faces screen-right, so row 1 running-right is the unmirrored render and row 2 running-left is its horizontal mirror; the client plays row 1 for a rightward drag and row 2 for a leftward drag",
+    "row_4_note": "the client forces the jumping row on pointer-enter (hover); the row now carries Wilson's own calm idle (_wilson) instead of the jump"
+  }
+}
