@@ -1,11 +1,15 @@
-# 威尔逊 Codex 桌宠（官方帧版）
+# 饥荒 Codex 桌宠（官方帧版）
 
-用《饥荒》官方贴图与官方动画数据逐帧渲染出来的 Codex v2 桌宠，没有使用 AI 生成图像。
+把《饥荒》官方贴图与官方动画数据逐帧渲染出来的 Codex v2 桌宠（无 AI 生成图像），每个角色一个独立目录。
+
+目前收录：
+
+- `pets/wilson/` —— **威尔逊**（Wilson，绅士科学家）
 
 ## 安装（一步）
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\install.ps1
+powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet wilson
 ```
 
 它会把 `final\spritesheet-extended.webp` 与 `pet\pet.json` 复制到
