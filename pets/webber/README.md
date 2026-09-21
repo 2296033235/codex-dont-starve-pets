@@ -4,6 +4,8 @@
 
 ## 安装（一步）
 
+先在仓库根目录（首次使用先 `git clone` 本仓库并进入目录），然后：
+
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet webber
 ```

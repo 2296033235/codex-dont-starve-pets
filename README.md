@@ -11,12 +11,24 @@
 
 ## 安装（一步）
 
+先把仓库拉下来（或者直接 Download ZIP 解压）：
+
+```powershell
+git clone https://github.com/2296033235/codex-dont-starve-pets.git
+cd codex-dont-starve-pets
+```
+
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet wilson   # 或 -Pet webber
 ```
 
 它会把对应角色的 `final\spritesheet-extended.webp` 与 `pet\pet.json` 复制到
-`%USERPROFILE%\.codex\pets\<角色id>\`，之后在 Codex 的桌宠列表里选对应角色即可。
+`%USERPROFILE%\.codex\pets\<角色id>\`。
+
+## 使用
+
+装完**重启一下 Codex 客户端**，在桌宠列表里就能选到角色了。每个角色自带 9 种状态：待机、拖动跟手（分左右朝向）、
+招手、悬停反应、出错（精神崩溃）、等审批、干活（制作）、查看成果，外加 16 个注视方向——盯着它看，它的眼睛会跟着你的鼠标转。
 
 ## 仓库结构
 
