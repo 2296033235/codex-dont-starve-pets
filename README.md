@@ -8,6 +8,7 @@
 | --- | --- | --- | --- |
 | [`pets/wilson/`](pets/wilson/README.md) | 威尔逊 | 绅士科学家 | "我会用我的头脑征服一切！" |
 | [`pets/webber/`](pets/webber/README.md) | 韦伯 | 蜘蛛男孩 | "我们可以克服万难！" |
+| [`pets/wx78/`](pets/wx78/README.md) | WX-78 | 没有灵魂的机器人 | "移情作用模块未响应" |
 
 ## 安装（一步）
 
@@ -39,10 +40,12 @@ codex-dont-starve-pets/
 ├── install.ps1          # 参数化安装：-Pet <角色id>
 ├── pets/
 │   ├── wilson/          # 威尔逊：final/ 图集 + pet/ 清单 + README
-│   └── webber/          # 韦伯：同上
+│   ├── webber/          # 韦伯：同上
+│   └── wx78/            # WX-78：同上
 └── scripts/
     ├── wilson/          # 威尔逊的提取 / 渲染 / 装配 / QA 脚本
-    └── webber/          # 韦伯的同套脚本
+    ├── webber/          # 韦伯的同套脚本
+    └── wx78/            # WX-78 的同套脚本
 ```
 
 名称、称号与台词均取自《饥荒》游戏自带官方中文语言文件 `data/scripts/languages/chinese_s.po`。
