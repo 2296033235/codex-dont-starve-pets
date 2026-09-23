@@ -20,7 +20,7 @@ cd codex-dont-starve-pets
 ```
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet wilson   # 或 -Pet webber
+powershell -ExecutionPolicy Bypass -File .\install.ps1 -Pet wilson   # 或 -Pet webber / -Pet wx78
 ```
 
 它会把对应角色的 `final\spritesheet-extended.webp` 与 `pet\pet.json` 复制到
